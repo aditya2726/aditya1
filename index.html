@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Soni | AS Creator Labs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+  <div class="logo">AS Creator Labs</div>
+  <div class="nav-links">
+    <a href="#clients">Clients</a>
+    <a href="#services">Services</a>
+    <a href="#results">Results</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<header class="hero reveal">
+
+  <div class="status-badge">
+    🟢 Accepting New Partnerships
+  </div>
+
+  <!-- Profile Image -->
+  <img src="images/profile.jpg" alt="Aditya Soni" class="profile-pic">
+
+  <h1>Aditya Soni</h1>
+  <h3>Strategic Content Creator</h3>
+
+  <p class="tagline">
+    Helping brands connect with engaged audiences through authentic storytelling.
+  </p>
+
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://instagram.com/adityasoni1708" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://youtube.com/@your_channel" target="_blank">
+      <i class="fab fa-youtube"></i> YouTube
+    </a>
+    <a href="https://linkedin.com/in/your_profile" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+  <a href="https://t.me/adityasoni1708" target="_blank">
+      <i class="fab fa-Telegram"></i> Telegram 
+    </a>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div>
+      <strong>36K+</strong>
+      <span>Community</span>
+    </div>
+    <div>
+      <strong>5M+</strong>
+      <span>Annual Reach</span>
+    </div>
+    <div>
+      <strong>12+</strong>
+      <span>Campaigns</span>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-group">
+    <a href="#contact" class="btn btn-primary">Schedule Strategy Call</a>
+    <a href="#clients" class="btn btn-outline">View Clients</a>
+  </div>
+
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="container">
+
+  <!-- CLIENTS -->
+  <section id="clients" class="card reveal">
+    <h2>Brands I've Worked With</h2>
+    <div class="grid">
+      <div class="brand">Jio</div>
+      <div class="brand">Airtel</div>
+      <div class="brand">Boat</div>
+      <div class="brand">Realme</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="card reveal">
+    <h2>Growth Solutions</h2>
+    <div class="grid">
+      <div>
+        <h4>High-Impact Reels</h4>
+        <p>Short-form content engineered for virality & engagement.</p>
+      </div>
+      <div>
+        <h4>YouTube Integrations</h4>
+        <p>Authentic brand storytelling that drives conversions.</p>
+      </div>
+      <div>
+        <h4>Growth Consulting</h4>
+        <p>Strategic positioning tailored for Indian tech brands.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="card reveal">
+    <h2>Case Study Snapshot</h2>
+    <div class="case-box">
+      <strong>Smartphone Launch Campaign</strong><br><br>
+      <strong>Objective:</strong> Increase Pre-orders<br>
+      <strong>Result:</strong> 32% boost in first-week conversions & 2M+ views
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="card reveal">
+    <h2>Start Your Campaign</h2>
+
+    <form action="https://formspree.io/f/mbdavpvz" method="POST">
+
+      <div class="input-row">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="text" name="brand" placeholder="Brand / Agency Name" required>
+      </div>
+
+      <div class="input-row">
+        <input type="email" name="email" placeholder="Business Email" required>
+        <select name="budget" required>
+          <option value="">Monthly Budget</option>
+          <option>₹5K - ₹10K</option>
+          <option>₹10K - ₹20K</option>
+          <option>₹20K - ₹50K</option>
+          <option>₹50K+</option>
+        </select>
+      </div>
+
+      <textarea name="message" rows="4" placeholder="Tell us about your campaign goals..." required></textarea>
+
+      <button type="submit" class="btn btn-primary full-btn">
+        Submit Inquiry
+      </button>
+
+    </form>
+  </section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+  © 2026 AS Creator Labs | Built for Growth-Focused Creators
+</footer>
+
+<!-- ================= REVEAL SCRIPT ================= -->
+
+<script>
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
+</script>
+
+</body>
+</html>
